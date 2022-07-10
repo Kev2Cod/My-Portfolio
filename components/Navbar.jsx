@@ -14,7 +14,7 @@ export default function Navbar() {
   };
 
   return (
-    <div className="w-full h-20 shadow-xl z-[10] ">
+    <div className="w-full px-5 h-20 shadow-xl z-[10] ">
       <div className="flex justify-between items-center w-fill h-full px-2 2xl:px-16">
         <Image src={logo} alt="logo" width="125" height="50" />
         <div>
@@ -47,7 +47,7 @@ export default function Navbar() {
           </ul>
 
           {/* Button Menu */}
-          <div onClick={handleNav}>
+          <div className="md:hidden" onClick={handleNav}>
             <AiOutlineMenu size={25} />
           </div>
 
@@ -61,8 +61,8 @@ export default function Navbar() {
             <div
               className={
                 isOpenNav
-                  ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
-                  : "fixed left-[-100%] top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
+                  ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[30%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
+                  : "fixed left-[-100%] w-[75%] sm:w-[60%] md:w-[30%] top-0 h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
               }
             >
               <div className="flex w-full item-center justify-between border-current ">
@@ -109,7 +109,7 @@ export default function Navbar() {
                   </Link>
                 </ul>
               </div>
-              <div className="pt-40">
+              <div className="pt-20">
                 <p className="font-bold uppercase text-[#5651e5]">
                   Let's Connect
                 </p>

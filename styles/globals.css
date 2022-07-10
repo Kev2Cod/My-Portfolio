@@ -13,8 +13,7 @@ html {
   body {
     @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide;
   }
-
-  h1,
+  s h1,
   h2,
   h3,
   h4,
